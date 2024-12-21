@@ -40,6 +40,7 @@ func (l *Library) BorrowBook(id string) {
 		return
 	}
 	book.isBorrowed = true
+	l.Books[id] = book
 	fmt.Println("Book successfully borrowed")
 }
 
@@ -55,6 +56,7 @@ func (l *Library) ReturnBook(id string) {
 		return
 	}
 	book.isBorrowed = false
+	l.Books[id] = book
 	fmt.Println("Book returned borrowed")
 }
 
