@@ -58,6 +58,7 @@ func (l *Library) ReturnBook(id string) {
 	fmt.Println("Book returned borrowed")
 }
 
+// ListBooks Prints all books
 func (l *Library) ListBooks() {
 	for _, book := range l.Books {
 		if book.isBorrowed {
