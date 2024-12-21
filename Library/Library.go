@@ -61,9 +61,9 @@ func (l *Library) ReturnBook(id string) {
 func (l *Library) ListBooks() {
 	for _, book := range l.Books {
 		if book.isBorrowed {
-			fmt.Printf("Book #{%s}: {%s} by {%s}. Not available\n", book.ID, book.Name, book.Author)
+			fmt.Printf("Book #%s: %s by %s. Not available\n", book.ID, book.Name, book.Author)
 		} else {
-			fmt.Printf("Book #{%s}: {%s} by {%s}. Available\n", book.ID, book.Name, book.Author)
+			fmt.Printf("Book #%s: %s by %s. Available\n", book.ID, book.Name, book.Author)
 		}
 	}
 }
