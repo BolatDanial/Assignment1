@@ -16,7 +16,7 @@ type Rectangle struct {
 }
 
 func (r Rectangle) Area() float64 {
-	return r.Length * r.Length
+	return r.Width * r.Length
 }
 func (r Rectangle) Perimeter() float64 {
 	return 2 * (r.Width + r.Length)
